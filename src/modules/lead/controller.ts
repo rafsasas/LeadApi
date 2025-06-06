@@ -4,7 +4,6 @@ import { create } from '../lead/service';
 export const store = async (req: Request, res: Response): Promise<Response> => {
   const { name, email, phone } = req.body;
 
-  // Validação simples
   if (!name || !email || !phone) {
     return res.status(400).json({
       message: 'Os campos nome, email e telefone são obrigatórios.',
