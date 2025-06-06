@@ -4,17 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/server.ts"
-  },
-    "scripts": {
-    "start": "ts-node src/index.ts"
-  },
-  "scripts": {
-    "start": "node index.js"
-  },
-  "scripts": {
-    "start": "nest start"
-  },
+  "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+  "start:ts": "ts-node src/index.ts",
+  "start:js": "node index.js",
+  "start:nest": "nest start",
+  "start": "ts-node src/index.ts"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
